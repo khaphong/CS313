@@ -80,4 +80,4 @@ def thongke3():
     print("Number of Instance:")
     print(len(X))
     print("Number of Attributes:")
-    print(len(X.count()))
+    print(len(X.count()), "chua tinh label class")

@@ -131,7 +131,7 @@ class MyFrame(wx.Frame):
 
     #Button thuc hien tao cua so nhap va test mau
     def OnTestButton(self, evt):
-        text=wx.TextEntryDialog(self, "Nhap so thu tu mau can test(STT trong csv-2 VD: (STT 5 nhap 3)):", "Window Nhap")
+        text=wx.TextEntryDialog(self, "Nhap so thu tu mau can test:", "Window Nhap")
         if text.ShowModal()==wx.ID_OK:
             num=int(text.GetValue())
             print("Mau so: ", num," dua tren file .csv")
@@ -142,7 +142,7 @@ class MyFrame(wx.Frame):
                 print("Label with train model: No")
     
     def OnTest2Button(self, evt):
-        text=wx.TextEntryDialog(self, "Nhap so thu tu mau can test(STT trong csv-2 VD: (STT 5 nhap 3)):", "Window Nhap")
+        text=wx.TextEntryDialog(self, "Nhap so thu tu mau can test:", "Window Nhap")
         if text.ShowModal()==wx.ID_OK:
             num=int(text.GetValue())
             print("Mau so: ", num , " dua tren file .csv")
