@@ -134,9 +134,9 @@ class MyFrame(wx.Frame):
         text=wx.TextEntryDialog(self, "Nhap so thu tu mau can test(STT trong csv-2 VD: (STT 5 nhap 3)):", "Window Nhap")
         if text.ShowModal()==wx.ID_OK:
             num=int(text.GetValue())
-            print("Mau so: ", num+2," dua tren file .csv")
-            print("True label: ", data.y.iloc[num])
-            if(y_pred[num]==1):
+            print("Mau so: ", num," dua tren file .csv")
+            print("True label: ", data.y.iloc[num-2])
+            if(y_pred[num-2]==1):
                 print("Label with train model: Yes")
             else:
                 print("Label with train model: No")
@@ -145,9 +145,9 @@ class MyFrame(wx.Frame):
         text=wx.TextEntryDialog(self, "Nhap so thu tu mau can test(STT trong csv-2 VD: (STT 5 nhap 3)):", "Window Nhap")
         if text.ShowModal()==wx.ID_OK:
             num=int(text.GetValue())
-            print("Mau so: ", num+2," dua tren file .csv")
-            print("True label: ", data.y.iloc[num])
-            if(y_pred2[num]==1):
+            print("Mau so: ", num , " dua tren file .csv")
+            print("True label: ", data.y.iloc[num-2])
+            if(y_pred2[num-2]==1):
                 print("Label with train model: Yes")
             else:
                 print("Label with train model: No")
