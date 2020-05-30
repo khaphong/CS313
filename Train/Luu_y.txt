@@ -1,0 +1,2 @@
+Khi train model svm va LogisticRegression bang Pca,
+ta khoi dong select_n.py truoc de biet nguyen nhan chon n_components

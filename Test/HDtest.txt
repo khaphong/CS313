@@ -1,0 +1,4 @@
+De thuc hien test:
+1/Khoi dong cmd
+2/Chay file app.py
+3/Khi dong lenh "Wait to load model" hien len cho 2p
